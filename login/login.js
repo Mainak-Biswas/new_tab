@@ -1,5 +1,6 @@
 
-function show()
+document.getElementById("lgbox").onclick = showlg;
+function showlg()
 {
 
   var w = document.getElementById("backtc");
@@ -12,7 +13,10 @@ function show()
 }
 
 
-function hide()
+
+document.getElementById("backtc").onclick = hidelg;
+document.getElementById("cross").onclick = hidelg;
+function hidelg()
 {
 
   var w = document.getElementById("backtc");

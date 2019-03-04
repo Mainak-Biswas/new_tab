@@ -68,6 +68,10 @@ function dragElement(elmnt)
   }
 }
 
+
+
+document.getElementById("backbtn").onclick = clstab;
+document.getElementById("backtab").onclick = clstab;
 //To close the tab using screen behind
 function clstab()
 {
@@ -79,7 +83,7 @@ function clstab()
 }
 
 
-
+document.getElementById("tab").onclick = exptab;
 function exptab()
 {
   var y = document.getElementById("sidebar");

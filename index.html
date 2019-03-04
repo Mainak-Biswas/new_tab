@@ -17,12 +17,12 @@
 <body>
 
     <div id="lgin">
-      <div id="backtc" onclick="hide()" >
+      <div id="backtc" >
       </div>
       <div id="tca" >
           <div id="qqs" align="center" >
               <h3>Login </h3>
-              <div id="cross" onclick="hide()">
+              <div id="cross" >
                   <img id="crs" src = "login/cross.png" />
                   <div id="icocv" ></div>
               </div>
@@ -54,7 +54,7 @@
 
 
     <div id="header" class="header" >
-        <div class="box" align="center" onclick="show()" >
+        <div id="lgbox" class="box" align="center"  >
             <p id="box-1"> Login </p>
         </div>
         <div class="header1">
@@ -104,9 +104,9 @@
 
 
     <div id="sidetab">
-      <div id="backtab" onclick="clstab()"></div>
+      <div id="backtab"></div>
 
-    	<div id="tab" class="tabop" onclick="exptab()">
+    	<div id="tab" class="tabop">
       		<div>
         		<img id="tabico"  src="expand/tab.png"></img>
       		</div>
@@ -116,9 +116,9 @@
 
     	<div id="sidebar">
           <div id="lfside">
-              <div id="backbtn">
+              <div id="backbtn" >
                   <img id="backimg" src="expand/back-arrow.png" class="backim" style="float:right;"></img>
-                  <div class="backimgcv" onclick="clstab()"></div>
+                  <div class="backimgcv" ></div>
               </div>
           
               <div id="coylogo">
@@ -127,23 +127,26 @@
                   </div>
                   <div id="coyname" align="center">Mainak Biswas</div>
               </div>
-              <div class="prm1">
-                  <a href="">
-                      <img class="menico" src="expand/home.png" style="float:right;"></img>
-                      <div class="menname"> Home </div>
-                  </a>
-              </div>
-              <div class="prm1">
-                  <a href="">
-                      <img class="menico"src="expand/share.png" style="float:right;"></img>
-                      <div class="menname"> Share </div>
-                  </a>
-              </div>
-              <div class="prm1">
-                  <a href="">
-                      <img class="menico"src="expand/setting.png" style="float:right;"></img>
-                      <div class="menname"> Setting </div>
-                  </a>
+              <hr>
+              <div id="menucontent">
+                  <div class="prm1">
+                      <a href="">
+                          <img class="menico" src="expand/home.png"></img>
+                          <div class="menname"> Home </div>
+                      </a>
+                  </div>
+                  <div class="prm1">
+                      <a href="">
+                          <img class="menico"src="expand/share.png"></img>
+                          <div class="menname"> Share </div>
+                      </a>
+                  </div>
+                  <div class="prm1">
+                      <a href="">
+                          <img class="menico"src="expand/setting.png"></img>
+                          <div class="menname"> Setting </div>
+                      </a>
+                  </div>
               </div>
           </div>
           <div id="rtside"></div>
