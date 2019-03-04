@@ -10,7 +10,6 @@ function dragEl(elmnt)
   function dragMouseDown(e) 
   {
     e = e || window.event;
-    e.preventDefault();
     
     // get the mouse cursor position at startup:
     pos2 = e.touches[0].clientX;
@@ -22,7 +21,6 @@ function dragEl(elmnt)
   function elDrag(e)
   {
     e = e || window.event;
-    e.preventDefault();
     if(e.touches[0].clientX < 300)//So that on rapid slide it does not slides much
     {
       // calculate the new cursor position:
