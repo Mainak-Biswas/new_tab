@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="shortcut icon"  href="media\logo.png"/>
+
+  <link rel="stylesheet" type="text/css" href="body.css"/>
+  <link rel="stylesheet" type="text/css" href="header\header.css"/>
+  <link rel="stylesheet" type="text/css" href="login\login.css"/>
+  <link rel="stylesheet" type="text/css" href="expand\expand.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Yantramanav' rel='stylesheet'>
+</head>
+<body>
+
+    <div id="lgin">
+      <div id="backtc" onclick="hide()" >
+      </div>
+      <div id="tca" >
+          <div id="qqs" align="center" >
+              <h3>Login </h3>
+              <div id="cross" onclick="hide()">
+                  <img id="crs" src = "login/cross.png" />
+                  <div id="icocv" ></div>
+              </div>
+              <form id="mainform1" name="mainform1" action="" method="GET">
+                  <div style="margin-left:10px;">
+                      <div class="cont">
+                          <div class="R1">Login id :</div>
+                          <div class="S1">
+                              <input class="f1-input" id="p1" type="text" name="Login" margin="980px" placeholder=" Your Login Id" required=""/>
+                          </div>
+                      </div>
+                      <div class="cont">
+                          <div class="R1">Password :</div>
+                          <div class="S1">
+                            <input class="f1-input" id="p2" type="password" name="Password" placeholder=" Your Password" required=""/>
+                          </div>
+                      </div>
+                      <div >
+                          <input type="submit" id="submit1" value="Sign in">
+                      </div>
+                      <div style="margin-left:10px;" >
+                          <a href="">Create Account</a> | <a href="">Forgot Password</a>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="header" class="header" >
+        <div class="box" align="center" onclick="show()" >
+            <p id="box-1"> Login </p>
+        </div>
+        <div class="header1">
+            <div  class="bx" id="bx-1" >
+                <div class="bx1">
+                    Name
+                    <img  class="arrow" src="header/arrow-down.png"></img>
+                </div>
+                <div class="regular"><a href="">Mainak</a></div>
+                <div class="regular"><a href="">Suman</a></div>
+                <div class="regular"><a href="">Minmay</a></div>
+                <div class="regular"><a href="">Harry</a></div>
+                <div class="regular"><a href="">Pheonix</a></div>
+           </div>
+           <div class="bx" id="bx-2">
+                <div  class="bx1">
+                   Class
+                   <img  class="arrow"  src="header/arrow-down.png"></img>
+                </div>
+                <div class="regular"><a href="">12th</a></div>
+                <div class="regular"><a href="">11th</a></div>
+                <div class="regular"><a href="">10th</a></div>
+                <div class="regular"><a href="">9th</a></div>
+                <div class="regular"><a href="">8th</a></div>
+                <div class="regular"><a href="">7th</a></div>
+                <div class="regular"><a href="">6th</a></div>
+                <div class="regular"><a href="">5th</a></div>
+                <div class="regular"><a href="">4th</a></div>
+                <div class="regular"><a href="">3rd</a></div>
+                <div class="regular"><a href="">2nd</a></div>
+                <div class="regular"><a href="">1st</a></div>
+            </div>
+            <div class="bx" id="bx-3">
+                <div  class="bx1">
+                 	Section
+                	<img  class="arrow"  src="header/arrow-down.png"> </img>
+                </div>
+
+                <div class="regular"><a href="">A-Section</a></div>
+                <div class="regular"><a href="">B-Section</a></div>
+                <div class="regular"><a href="">C-Section</a></div>
+                <div class="regular"><a href="">D-Section</a></div>
+                <div class="regular"><a href="">E-Section</a></div>
+            </div>
+      	</div>
+  	</div>
+
+
+    <div id="sidetab">
+      <div id="backtab" onclick="clstab()"></div>
+
+    	<div id="tab" class="tabop" onclick="exptab()">
+      		<div>
+        		<img id="tabico"  src="expand/tab.png"></img>
+      		</div>
+      		<div class="backimgcv" ></div>
+    	</div>
+
+
+    	<div id="sidebar">
+          <div id="lfside">
+              <div id="backbtn">
+                  <img id="backimg" src="expand/back-arrow.png" class="backim" style="float:right;"></img>
+                  <div class="backimgcv" onclick="clstab()"></div>
+              </div>
+          
+              <div id="coylogo">
+                  <div id="logo" align="center">
+                      <img src="expand/logo.png" style="height:100px;width:100px;max-height:100px;margin-bottom:10px;"></img>
+                  </div>
+                  <div id="coyname" align="center">Mainak Biswas</div>
+              </div>
+              <div class="prm1">
+                  <a href="">
+                      <img class="menico" src="expand/home.png" style="float:right;"></img>
+                      <div class="menname"> Home </div>
+                  </a>
+              </div>
+              <div class="prm1">
+                  <a href="">
+                      <img class="menico"src="expand/share.png" style="float:right;"></img>
+                      <div class="menname"> Share </div>
+                  </a>
+              </div>
+              <div class="prm1">
+                  <a href="">
+                      <img class="menico"src="expand/setting.png" style="float:right;"></img>
+                      <div class="menname"> Setting </div>
+                  </a>
+              </div>
+          </div>
+          <div id="rtside"></div>
+        </div>
+    </div>
+
+
+  <script src="expand/expand.js" type="text/javascript"></script>
+  <script src="expand/expands.js" type="text/javascript"></script>
+  <script src="login/login.js" type="text/javascript"></script>
+  <script src="header/header.js" type="text/javascript"></script>
+
+</body>
+</html>

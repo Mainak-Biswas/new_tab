@@ -1,0 +1,176 @@
+#header
+{
+  position: fixed;
+  background: #aaa;
+  width: 100%;
+  z-index: 800;
+  transition: all 0.3s;
+  border-radius: 0px 0px 5px 5px;
+  padding: 0px 0px 8px 0px;
+}
+
+.header
+{
+  top: 0px;
+}
+
+.box
+{
+  height: auto;
+  font-size: 12px;
+  z-index: 801;
+  float:right;
+
+}
+
+#box-1
+{
+  padding: 15px 20px 0px 20px;
+    height: 30px;
+    font-family: open-sans, sans-serif;
+    font-size: 15px;
+    background: gray;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 801;
+    margin: 0px 10px 0px 10px;
+    padding-top: 18px;
+}
+
+#box-1:hover
+{
+    background-color:#fff;
+    color:#57579c;
+    cursor:pointer;
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+
+.header1
+{
+  position: relative;
+  top:1px;
+  float: right;
+  right: 20%;
+  margin-right: -47px;
+  height: 52px;
+}
+
+.bx
+{
+  display: inline-block;
+  position: relative;
+  width:auto;
+  height: 33px;
+  float:right;
+  margin-right:10px;
+  background:gray;
+  font-family:open-sans, sans-serif;
+  font-size:15px;
+  overflow:hidden;
+  border-radius:5px 5px 0px 0px;
+  z-index:807;
+  top: 25px;
+  transition: height 0.5s ;
+
+}
+
+.bx:hover
+{
+  background:white;
+  color:#57579c;
+  transition: height 0.7s ;
+}
+
+
+.bx1
+{
+  width:80px;
+  padding:7px 2px 5px 8px  ;
+  box-shadow:0px 1px 1px #aaa;
+  font-family: open-sans, sans-serif;
+  font-size:16px;
+  display: block;
+  height: 22px;
+}
+
+#bx-1:hover
+{
+  height:199px;
+}
+
+#bx-2:hover
+{
+  height:430px;
+}
+
+#bx-3:hover
+{
+  height:199px;
+}
+
+.regular
+{
+  border:none;
+  margin-top:0px;
+  padding:2px;
+  background:gray;
+}
+
+.regular:hover
+{
+  margin-top:0px;
+  border-left:4px solid mediumaquamarine;
+  background:white;
+}
+
+.regular a
+{
+  padding: 2px 2px;
+  height: 20px;
+  color: #000000;
+  text-decoration:none;
+  text-transform: none;
+  line-height: 29px;
+  border-radius: 2px;
+}
+
+.regular a:hover
+{
+  color:#6b6969;
+  transition: color 0.2s ease-in-out 0s;
+  overflow:hidden;
+}
+
+
+
+
+.arrow{
+margin-top:7px;
+float:right;
+width:20px;
+height:10px;
+transition: all 0.2s;
+}
+
+.bx:hover .arrow{
+  transform:rotate(180deg);
+}
+
+
+@media only screen and (max-width: 525px)
+{
+    .box
+    {
+        width:100%;
+    }
+
+    #header
+    {
+       height:100px;
+    }
+
+}
+
+
+
