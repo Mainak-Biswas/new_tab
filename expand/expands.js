@@ -5,8 +5,13 @@ function dragEl(elmnt)
   var pos1 = 0,  pos2 = 0;
   if (document.getElementById(elmnt.id))
  
-  document.getElementById(elmnt.id).ontouchstart = dragMouseDown;
+  document.getElementById(elmnt.id).ontouchstart =  function(){ dragRight(), dragMouseDown()};
   
+  function dragRight()
+  {    
+    elmnt.style.left = (-280) + "px";
+  }
+
   function dragMouseDown(e) 
   {
     e = e || window.event;
