@@ -11,7 +11,10 @@ function dragElement(elmnt)
   
   function dragRight()
   {    
-    elmnt.style.left = (-280) + "px";
+    if(elmnt.offsetLeft <= -280)
+    {  
+       elmnt.style.left = (-280) + "px";
+    }
   }
   
   function dragMouseDown(e) 
