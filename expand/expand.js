@@ -33,13 +33,13 @@ function dragElement(elmnt)
   {
     e = e || window.event;
     e.preventDefault();
-    if(e.clientX < 300)//So that on rapid slide it does not slides much
+    if(e.clientX < 270)//So that on rapid slide it does not slides much
     {
       // calculate the new cursor position:
       pos1 = pos2 - e.clientX;
       pos2 = e.clientX;
       // set the element's new position:
-      if(elmnt.offsetLeft <= -30)
+      if(elmnt.offsetLeft <= -30 )
       {
     	 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
       }
