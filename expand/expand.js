@@ -33,8 +33,10 @@ function dragElement(elmnt)
   {
     e = e || window.event;
     e.preventDefault();
-    if((elmnt.offsetLeft - pos1) <= -30 || elmnt.style.left <= "-30px")//So that on rapid slide it does not slides much
-    {
+
+    //So that on rapid slide it does not slides much
+    // if((elmnt.offsetLeft - pos1) <= -30 || elmnt.style.left <= "-30px")
+    // {
       // calculate the new cursor position:
       pos1 = pos2 - e.clientX;
       pos2 = e.clientX;
@@ -60,7 +62,7 @@ function dragElement(elmnt)
 
       //Backtab actions
       var z = document.getElementById("backtab");
-      if(elmnt.offsetLeft > -270 )
+      if(elmnt.offsetLeft > -250 )
       {      
           z.style.visibility = "visible";
           z.style.opacity = "0.5";
@@ -71,7 +73,7 @@ function dragElement(elmnt)
           z.style.opacity = "0.0";
 
       }
-    }
+    // }
   }
 
   function closeDragElement() {
