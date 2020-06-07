@@ -57,6 +57,20 @@ function dragElement(elmnt)
 	      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
 		  }
       elmnt.style.transition = "left 0s";
+
+      //Backtab actions
+      var z = document.getElementById("backtab");
+      if(elmnt.offsetLeft <= -280 )
+      {      
+          z.style.visibility = "visible";
+          z.style.opacity = "0.5";
+      }
+      else
+      {
+          z.style.visibility = "hidden";
+          z.style.opacity = "0.0";
+
+      }
     }
   }
 
@@ -72,19 +86,6 @@ function dragElement(elmnt)
     else
    {
    		elmnt.style.left = (-290) + "px";
-   }
-
-   var z = document.getElementById("backtab");
-   if(elmnt.offsetLeft <= -280 )
-   {      
-      z.style.visibility = "visible";
-      z.style.opacity = "0.5";
-   }
-   else
-   {
-      z.style.visibility = "hidden";
-      z.style.opacity = "0.0";
-
    }
   }
 }
