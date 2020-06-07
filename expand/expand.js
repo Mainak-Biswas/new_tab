@@ -75,7 +75,7 @@ function dragElement(elmnt)
    }
 
    var z = document.getElementById("backtab");
-   if(elmnt.style.left === "-30px" )
+   if(elmnt.offsetLeft <= -280 )
    {      
       z.style.visibility = "visible";
       z.style.opacity = "0.5";
