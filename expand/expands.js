@@ -35,10 +35,23 @@ function dragEl(elmnt)
       pos1 = pos2 - e.touches[0].clientX;
       pos2 = e.touches[0].clientX;
       // set the element's new position:
-      if(elmnt.offsetLeft <= -30)
-      {
-    	 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-      }
+      if(elmnt.offsetLeft<-30 )
+	    {
+	       moveDiv()
+	    }
+	    else{
+	      elmnt.style.left = "-30px";
+	    }
+	    
+	    if(elmnt.offsetLeft==-30 && pos1>=0)
+	    {
+	      	moveDiv();
+	    }
+	    
+	    function moveDiv()
+	    {
+	      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+		  }
       elmnt.style.transition = "left 0s";
     }
   }
