@@ -27,6 +27,8 @@ function dragElement(elmnt)
     document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
+
+    backTab();
   }
 
   function elementDrag(e)
@@ -56,23 +58,13 @@ function dragElement(elmnt)
 	    
 	    function moveDiv()
 	    {
-	      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        backTab();
 		  }
       elmnt.style.transition = "left 0s";
 
       //Backtab actions
-      var z = document.getElementById("backtab");
-      if(elmnt.offsetLeft > -250 )
-      {      
-          z.style.visibility = "visible";
-          z.style.opacity = "0.5";
-      }
-      else
-      {
-          z.style.visibility = "hidden";
-          z.style.opacity = "0.0";
-
-      }
+      
     // }
   }
 
@@ -89,6 +81,7 @@ function dragElement(elmnt)
    {
    		elmnt.style.left = (-290) + "px";
    }
+   backTab();
   }
 }
 
@@ -117,4 +110,21 @@ function exptab()
 
   z.style.visibility = "visible";
   z.style.opacity = "0.5";
+}
+
+// Backtab visibility
+function backTab()
+{
+  var z = document.getElementById("backtab");
+  if(elmnt.offsetLeft > -250 )
+  {      
+      z.style.visibility = "visible";
+      z.style.opacity = "0.5";
+  }
+  else
+  {
+      z.style.visibility = "hidden";
+      z.style.opacity = "0.0";
+
+  }
 }
