@@ -25,10 +25,9 @@ function dragElement(elmnt)
     // get the mouse cursor position at startup:
     pos2 = e.clientX;
     document.onmouseup = closeDragElement;
+    
     // call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
-
-    backTab();
   }
 
   function elementDrag(e)
@@ -37,7 +36,7 @@ function dragElement(elmnt)
     e.preventDefault();
 
     //So that on rapid slide it does not slides much
-    // if((elmnt.offsetLeft - pos1) <= -30 || elmnt.style.left <= "-30px")
+    // if((elmnt.offsetLeft - pos1) <= -40 || elmnt.style.left <= "-40px")
     // {
       // calculate the new cursor position:
       pos1 = pos2 - e.clientX;
@@ -59,13 +58,12 @@ function dragElement(elmnt)
 	    function moveDiv()
 	    {
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-        backTab();
+        
 		  }
       elmnt.style.transition = "left 0s";
-
       //Backtab actions
-      
-    // }
+      backTabVis(elmnt);
+  //  }
   }
 
   function closeDragElement() {
@@ -81,7 +79,7 @@ function dragElement(elmnt)
    {
    		elmnt.style.left = (-290) + "px";
    }
-   backTab();
+   backTabVis(elmnt);   
   }
 }
 
@@ -113,10 +111,10 @@ function exptab()
 }
 
 // Backtab visibility
-function backTab()
+function backTabVis(elmnt)
 {
   var z = document.getElementById("backtab");
-  if(elmnt.offsetLeft > -250 )
+  if(elmnt.offsetLeft >= -140)
   {      
       z.style.visibility = "visible";
       z.style.opacity = "0.5";
