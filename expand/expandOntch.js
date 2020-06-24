@@ -2,7 +2,7 @@ dragEl(document.getElementById("sidebar"));
 
 function dragEl(elmnt)
 {
-    var pos1 = 0,  pos2 = 0, opac = 0;
+    var pos1 = 0,  pos2 = 0, opac = 1;
 
     elmnt.ontouchstart =  function(){ dragRt(), dragTouchDown()};
     
