@@ -4,9 +4,9 @@ function dragEl(elmnt)
 {
     var pos1 = 0,  pos2 = 0, opac = 0;
 
-    elmnt.ontouchstart =  function(){ dragRight(), dragMouseDown()};
+    elmnt.ontouchstart =  function(){ dragRt(), dragTouchDown()};
     
-    function dragRight()
+    function dragRt()
     {    
         if(elmnt.offsetLeft <= -240)
         {  
@@ -14,7 +14,7 @@ function dragEl(elmnt)
         }
     }
 
-    function dragMouseDown(e) 
+    function dragTouchDown(e) 
     {
         e = e || window.event;
         
