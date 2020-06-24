@@ -26,7 +26,7 @@ function dragEl(elmnt)
         {
           if(elmnt.offsetLeft >= -250 && elmnt.offsetLeft <= 0)
             {
-              elementDrag();
+              elDrag();
             }
         };
     }
