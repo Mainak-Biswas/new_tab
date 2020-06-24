@@ -167,17 +167,18 @@ border-bottom: 1px solid #eee;
   height: 27px;
   width: 78%;
   padding-top: 10px;
-  text-align: left;
   padding-left: 50px;
-  transition: height 0.3s;
+  text-align: left;
 }
 
 .prm1 a:hover
 {
   color: #333;
   background: white;
-  border-left: 10px solid mediumaquamarine;
-  padding: 10px 0px 0px 40px;
+  border-left: 10px solid mediumaquamarine;height: 35px;
+  transform: translateY(-8px);
+  padding-top: 15px;
+  width: 75%;
 }
 
 .menico{
@@ -193,6 +194,11 @@ transform: translateX(-25px)
 transform: translateX(0);
 opacity: 1;
 transition: all 0.4s;
+}
+
+.prm1 a i{
+  font-size: 20px;  
+  color: #606060;
 }
 
 .menname{
