@@ -17,7 +17,7 @@ function dragEl(elmnt)
     function dragTouchDown(e) 
     {
         e = e || window.event;
-    	e.preventDefault();
+        e.preventDefault();
         
         // get the mouse cursor position at startup:
         pos2 = e.touches[0].clientX;
@@ -35,12 +35,13 @@ function dragEl(elmnt)
     function elDrag(e)
     {
     	e = e || window.event;
-    	e.preventDefault();
         // calculate the new cursor position:
         pos1 = pos2 - e.touches[0].clientX;
         pos2 = e.touches[0].clientX;
         // set the element's new position:
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        
+        elmnt.style.transition = "left 0s";
       
         if(elmnt.offsetLeft <= -250)
         {
