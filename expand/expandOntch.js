@@ -17,7 +17,6 @@ function dragEl(elmnt)
     function dragTouchDown(e) 
     {
         e = e || window.event;
-    	e.preventDefault();
         
         // get the mouse cursor position at startup:
         pos2 = e.touches[0].clientX;
@@ -36,7 +35,6 @@ function dragEl(elmnt)
     {
 
         e = e || window.event;
-    	e.preventDefault();
         // calculate the new cursor position:
         pos1 = pos2 - e.touches[0].clientX;
         pos2 = e.touches[0].clientX;
