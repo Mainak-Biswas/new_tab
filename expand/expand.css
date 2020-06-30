@@ -167,7 +167,7 @@ border-bottom: 1px solid #eee;
   color: #606060;
   font-size: 14px;
   height: 27px;
-  width: 78%;
+  width: 95%;
   padding-top: 10px;
   padding-left: 50px;
   text-align: left;
@@ -178,10 +178,11 @@ border-bottom: 1px solid #eee;
 {
   color: #333;
   background: white;
-  border-left: 10px solid mediumaquamarine;height: 35px;
+  border-left: 1% solid mediumaquamarine;
+  height: 35px;
   transform: translateY(-8px);
   padding-top: 15px;
-  width: 75%;
+  width: 94%;
   box-shadow: 0px 0px 5px grey;
   transition: all 0.1s;
 }
@@ -190,7 +191,7 @@ border-bottom: 1px solid #eee;
 float: right;
 width:20px;
 height:20px;
-padding-right:6px;
+padding-right:10px;
 opacity: 0; 
 transform: translateX(-25px)
 }
