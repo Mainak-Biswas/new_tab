@@ -13,7 +13,7 @@ function dragElement(elmnt)
 	{    
 	    if(elmnt.offsetLeft <= -340)
 	    {  
-	       elmnt.style.left = (-240) + "px";
+	       elmnt.style.left = (-340) + "px";
 	    }
 	}
   
