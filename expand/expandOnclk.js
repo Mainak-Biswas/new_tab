@@ -3,7 +3,7 @@ document.getElementById("backtab").onclick = clstab;
 //To close the tab using screen behind
 function clstab()
 {
-  document.getElementById("sidebar").style.left = "-250px";
+  document.getElementById("sidebar").style.left = "-360px";
 
   var z = document.getElementById("backtab");
   z.style.visibility = "hidden";
