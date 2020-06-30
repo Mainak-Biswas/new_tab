@@ -8,9 +8,9 @@ function dragEl(elmnt)
     
     function dragRt()
     {    
-        if(elmnt.offsetLeft <= -240)
+        if(elmnt.offsetLeft <= -230)
         {  
-           elmnt.style.left = (-240) + "px";
+           elmnt.style.left = (-230) + "px";
         }
     }
 
