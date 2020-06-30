@@ -11,9 +11,9 @@ function dragElement(elmnt)
 	  
 	function dragRight()
 	{    
-	    if(elmnt.offsetLeft <= -230)
+	    if(elmnt.offsetLeft <= -340)
 	    {  
-	       elmnt.style.left = (-230) + "px";
+	       elmnt.style.left = (-240) + "px";
 	    }
 	}
   
@@ -27,7 +27,7 @@ function dragElement(elmnt)
 	    // call a function whenever the cursor moves:
 	    document.onmousemove = function()
 	    {
-    		if(elmnt.offsetLeft >= -250 && elmnt.offsetLeft <= 0)
+    		if(elmnt.offsetLeft >= -360 && elmnt.offsetLeft <= 0)
         	{
         		elementDrag();
         	}
@@ -46,9 +46,9 @@ function dragElement(elmnt)
 		
 	    elmnt.style.transition = "left 0s";
 
-	    if(elmnt.offsetLeft <= -250)
+	    if(elmnt.offsetLeft <= -360)
 	    {
-	    	elmnt.style.left = "-250px";
+	    	elmnt.style.left = "-360px";
 	    }
 	    if(elmnt.offsetLeft >= 0)
 	    {
@@ -71,21 +71,21 @@ function dragElement(elmnt)
 
 	function posOnclose(){
 		elmnt.style.transition = "left 0.4s";
-	    if(elmnt.offsetLeft > -125)
+	    if(elmnt.offsetLeft > -180)
 	    {
 	        elmnt.style.left = "0px";
 	    }
 	    else
 	    {
-	   		elmnt.style.left = "-250px";
+	   		elmnt.style.left = "-360px";
 	    }
 	}
 
 	var lf = 0;
 	function backTab(){
-		var z = document.getElementById("backtab");
-	    opac = 1+(elmnt.offsetLeft/250);
-	    if(elmnt.offsetLeft > -150 )
+	    var z = document.getElementById("backtab");
+	    
+	    if(elmnt.offsetLeft > -180 )
 	    {      
 	        z.style.visibility = "visible";
 	    }
@@ -95,7 +95,7 @@ function dragElement(elmnt)
 	    }
 
 	    lf = elmnt.offsetLeft;
-		if(lf <= -150)
+		if(lf <= -180)
 		{opac = 0;}
 		else
 		{opac = 0.5;}
